@@ -1,6 +1,20 @@
 # ... Your other settings.
 
-# Cache different doctrine things, e.g. the annotation
+# Cache different doctrine things, e.g. the annotation or the results.
+#
+# To cache results you might do this:
+#         $qb = $this->createQueryBuilder('e');
+#         $query = $qb
+#             ->addSelect('company')
+#             ->leftJoin('e.company', 'company')
+#             ->andWhere('e.id = :id')
+#             ->setParameter('id', $id)
+#             ->getQuery()
+#             // the next line is to cache this query
+#             ->useResultCache(true, 3600)
+#          ;
+#
+#          return $query->getResult();
 doctrine:
     orm:
         auto_mapping: true

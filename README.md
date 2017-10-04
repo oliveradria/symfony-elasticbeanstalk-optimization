@@ -1,6 +1,8 @@
 # Symfony + AWS ElasticBeanstalk Optimization
 
-Some files that help me optimize a Symfony (currently version 3.3) + with ElasticBeanstalk setup.
+Some files that help me optimize a Symfony (currently version 3.3) + with ElasticBeanstalk (Amazon Linux
+AMI 2.4.4) setup. These are just suggestions, I tried to use the ones, that have no or very little
+downside. Use at your own risk.
 
 ## Deployment
 
