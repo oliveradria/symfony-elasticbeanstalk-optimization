@@ -1,0 +1,9 @@
+# ... Your other settings.
+
+# Cache different doctrine things, e.g. the annotation
+doctrine:
+    orm:
+        auto_mapping: true
+        metadata_cache_driver: apcu
+        result_cache_driver: apcu
+        query_cache_driver: apcu
